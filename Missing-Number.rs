@@ -1,7 +1,7 @@
 //Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, 
 //find the one that is missing from the array.
 
-//using Gauss' formula formula n(n+1)/2
+//using Gauss' formula: n(n+1)/2
 
 impl Solution {
     
