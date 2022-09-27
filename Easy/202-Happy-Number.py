@@ -37,12 +37,3 @@ class Solution:
             digit // 10 
 
         return output
-
-
-
-
-    
-
-
-
- 
