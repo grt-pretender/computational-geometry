@@ -7,6 +7,7 @@
 // ==========================
 
 // using dynamic programming, memorization, bottom-up approach
+// solving a recursive problem iteratively
 // using two pointers, each step capacity is the sum of the two previous ones,
 // like Fibonacci numbers
 
