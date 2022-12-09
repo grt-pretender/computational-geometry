@@ -14,7 +14,7 @@ class Solution:
         new_array = [0] + flowerbed + [0]
 
         # checking for three 0`s in a row with a pointer
-        pointer= 0
+        pointer = 0
         for pointer in range(1, len(new_array) - 1):
             if new_array[pointer - 1] == 0 and new_array[pointer] == 0 and new_array[pointer + 1] == 0:
         
