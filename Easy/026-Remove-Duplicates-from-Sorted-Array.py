@@ -33,7 +33,7 @@ class Solution:
 
 
         # ========================================================
-        # using two pointers going in one direction, left to right
+        # 2) using two pointers going in one direction, left to right
         # the left pointer is also our k
         # ========================================================
 
