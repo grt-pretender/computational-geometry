@@ -5,8 +5,9 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
 
-
+# =================================
 # 1)  Using build-in sorting method
+# =================================
         
         string1 = sorted(s)
         string2 = sorted(t)
@@ -15,7 +16,22 @@ class Solution:
             return False
         return True
         
+# =================================
+# 2)  Another variant
+# =================================
+        
+        if len(s) != len(t):
+            return False
 
-# 2)  Neetcode`s hint) 
+        new_counter = Counter(s)
+        for c in t:
+            new_counter[c] -= 1
+            if new_counter[c] < 0:
+                return False
+        return True
+        
+# =================================
+# 3)  Neetcode`s hint) 
+# =================================
 
         return Counter(s) == Counter(t)
