@@ -1,2 +1,2 @@
 # leetcode-snippets
-Solutions using Python, Rust, JS
+Solutions using Python, Rust, Racket
