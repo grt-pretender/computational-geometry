@@ -19,7 +19,7 @@
 use std::collections::HashMap;
 impl Solution {
     pub fn character_replacement(s: String, k: i32) -> i32 {
-        let (mut left_ptr, mut res) = (0, 0);
+        let (mut left_ptr, mut our_result) = (0, 0);
         let mut s: Vec<char> = s.chars().collect();
         let mut frequency: HashMap<char, usize> = HashMap::new();
 
@@ -36,8 +36,8 @@ impl Solution {
             }
 
             let sliding_window = right_ptr - left_ptr + 1;
-            res = core::cmp::max(res, sliding_window);
+            our_result = core::cmp::max(our_results, sliding_window);
         }
-        res as i32
+        our_result as i32
     }
 }
