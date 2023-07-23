@@ -11,17 +11,16 @@
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        result = 0
-        left_pointer, right_pointer = 0, len(height) - 1
+        our_result, left_ptr, right_ptr = 0, 0, len(height) - 1
 
-        while left_pointer < right_pointer: 
-            calculated_area = (right_pointer - left_pointer) * min(height[left_pointer], height[right_pointer])
-            result = max(result, calculated_area)
+        while left_ptr < right_ptr: 
+            calculated_area = (right_ptr - left_ptr) * min(height[left_ptr], height[right_ptr])
+            our_result = max(our_result, calculated_area)
 
-            if height[left_pointer] < height[right_pointer]:
-                left_pointer += 1
+            if height[left_ptr] < height[right_ptr]:
+                left_ptr += 1
             else:
-                right_pointer -= 1
+                right_ptr -= 1
         
-        return result
+        return our_result
 
