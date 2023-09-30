@@ -13,7 +13,7 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
 
-    	s_hmap = Counter(s)
+    		s_hmap = Counter(s)
 		t_hmap = Counter(t)
 
 		for c in t:
