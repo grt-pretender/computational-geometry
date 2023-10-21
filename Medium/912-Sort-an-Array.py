@@ -8,7 +8,7 @@ class Solution:
         heapq.heapify(nums)
         stored = []
         
-        for i in range(0, len(nums)):
+        while nums:
             stored.append(heapq.heappop(nums))
 
         return stored
