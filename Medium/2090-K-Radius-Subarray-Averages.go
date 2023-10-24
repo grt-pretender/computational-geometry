@@ -19,17 +19,17 @@ func getAverages(nums []int, k int) []int {
     avg_result[i] = _default
         }
 
-  left_prt, window_sum := 0, 0
+  left_ptr, window_sum := 0, 0
   window_size := 2 * k + 1
   
-  for right_prt := range nums {
-    window_sum += nums[right_prt] 
+  for right_ptr := range nums {
+    window_sum += nums[right_ptr] 
 
-    if right_prt - left_prt + 1 == window_size {
-      center_index := right_prt - k
+    if right_ptr - left_ptr + 1 == window_size {
+      center_index := right_ptr - k
       avg_result[center_index] = window_sum / window_size
-      window_sum -= nums[left_prt]
-      left_prt += 1
+      window_sum -= nums[left_ptr]
+      left_ptr += 1
     }
   }
   return avg_result 
