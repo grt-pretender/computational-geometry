@@ -24,13 +24,13 @@ def getConcatenation(nums: list[int]) -> list[int]:
 
 
 	# 3) creating an extra array, another option
-    n = len(nums)
-    ans = [0]*2*n
-      
-    for i in range(0, n):
-      ans[i] = nums[i]
-      ans[i+n] = nums[i]
-    return ans
+    	n = len(nums)
+    	ans = [0]*2*n
+	
+    	for i in range(0, n):
+      	ans[i] = nums[i]
+      	ans[i+n] = nums[i]
+    	return ans
 
 
 	# 4) and another one
